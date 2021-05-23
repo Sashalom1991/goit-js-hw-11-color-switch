@@ -24,7 +24,7 @@ let intervalColor = undefined;
 
 function setRandomColors() {
   intervalColor = setInterval(() => {
-    const randomColors = colors[randomIntegerFromInterval(0, colors.length)];
+    const randomColors = colors[randomIntegerFromInterval(0, colors.length-1)];
     console.log(randomColors);
     refs.body.style.background = randomColors;
   }, 1000);
